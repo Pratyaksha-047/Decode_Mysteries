@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decode Mysteries</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/level1.css')}}">
+    </head>
+    <body>
+        <img id="Barrel" src="/img/obj2" onclick="document.getElementById('2').style.textDecorationLine='line-through'; document.getElementById('Barrel').style.visibility='hidden'">
+        <img id="Knife" src="/img/obj4" onclick="document.getElementById('4').style.textDecorationLine='line-through'; document.getElementById('Knife').style.visibility='hidden'">
+        <img id="Hat" src="/img/obj3.png" onclick="document.getElementById('3').style.textDecorationLine='line-through'; document.getElementById('Hat').style.visibility='hidden'">
+        <img id="Shoe" src="/img/obj5" onclick="document.getElementById('5').style.textDecorationLine='line-through'; document.getElementById('Shoe').style.visibility='hidden'">
+        <img id="Remote" src="/img/obj1" onclick="document.getElementById('1').style.textDecorationLine='line-through'; document.getElementById('Remote').style.visibility='hidden'">       <div id="grid">
+            <span id="5">Shoe</span>
+            <span id="3">Hat</span>
+            <span id="1">Remote</span>
+            <span id="2">Barrel</span>
+            <span id="4">Knife</span>
+        
+            <script>
+                let user_score = 0;
+    
+                document.getElementById('Barrel').onclick = function() {
+                    user_score+=1
+                    document.getElementById('2').style.textDecorationLine='line-through'; 
+                    document.getElementById('Barrel').style.visibility='hidden';
+                    if(user_score==5){
+                    alert("Congratulations! You have found all the objects.");
+                    window.location.href="/html/questions.html"
+                    }
+                }
+                document.getElementById('Knife').onclick = function() {
+                    user_score+=1
+                    document.getElementById('4').style.textDecorationLine='line-through'; 
+                    document.getElementById('Knife').style.visibility='hidden';
+                    if(user_score==5){
+                    alert("Congratulations! You have found all the objects.");
+                    window.location.href="/html/questions.html"
+                    }
+                }
+                document.getElementById('Hat').onclick = function() {
+                    user_score+=1
+                    document.getElementById('3').style.textDecorationLine='line-through'; 
+                    document.getElementById('Hat').style.visibility='hidden';
+                    if(user_score==5){
+                    alert("Congratulations! You have found all the objects.");
+                    window.location.href="/html/questions.html"
+                    }
+                }
+                document.getElementById('Shoe').onclick = function() {
+                    user_score+=1;
+                    document.getElementById('5').style.textDecorationLine='line-through'; 
+                    document.getElementById('Shoe').style.visibility='hidden';
+                    if(user_score==5){
+                    alert("Congratulations! You have found all the objects.");
+                    window.location.href="/html/questions.html"
+                    }
+                }
+                document.getElementById('Remote').onclick = function() {
+                    user_score+=1;
+                    document.getElementById('1').style.textDecorationLine='line-through'; 
+                    document.getElementById('Remote').style.visibility='hidden';
+                    if(user_score==5){
+                    alert("Congratulations! You have found all the objects.");
+                    window.location.href="/html/questions.html"
+                    }
+                }
+            </script>
+        
+        </div>
+    </body>
+</html>
