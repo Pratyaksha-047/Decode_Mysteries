@@ -1,0 +1,132 @@
+body {
+    background-image: url(/img/bg2);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+@font-face {
+    font-family: AlbertsthalTyperwriter;
+    src: url(/fonts/AlbertsthalTypewriter.ttf);
+}
+#Scarf {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    display: inline-block;
+    opacity: 0.9;
+    top: 15%;
+    left: 32%;
+}
+#Calendar {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    opacity: 0.7;
+    left: 40%;
+}
+#Key {
+    width: 100px;
+    height: 200px;
+    position: fixed;
+    display: block;
+    right: 0%;
+    top: 35%;
+}
+#JewelryCasket {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    display: block;
+    opacity: 1;
+    left: 88%;
+    top: 16%;
+}
+#Floppy {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    display: block;
+    opacity: 0.8;
+    left: 52%;
+    top: 63%;
+}
+#Pendant {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    display: block;
+    opacity: 0.9;
+    left: 60%;
+    top: 45%;
+}
+#Rope {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    display: block;
+    opacity: 0.8;
+    left: 55%;
+    bottom:60%;
+}
+#Sock {
+    width: 130px;
+    height: 130px;
+    position: fixed;
+    display: block;
+    opacity: 1;
+    top: 35%;
+    left: 0%;
+}
+#Journal {
+    width: 140px;
+    height: 250px;
+    position: fixed;
+    display: block;
+    opacity: 0.9;
+    right: 6%;
+    bottom: 15%;
+    transform: rotate(22deg);
+}
+#Cassette {
+    width: 90px;
+    height: 50px;
+    position: fixed;
+    display: block;
+    opacity: 0.6;
+    left: 28%;
+    bottom: 50%;
+    transform: rotate(15deg);
+}
+
+#grid {
+    height: fit-content;
+    width: 85%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-style: outset;
+    border-color: wheat;
+    border-width: 2px;
+    align-content: center;
+    padding: 0 2.5% 1% 2.5%;
+    
+}
+
+span {
+    padding: 1%;
+    padding-bottom: 0;
+    color: white;
+    font-size: 40px;
+    font-family: AlbertsthalTyperwriter;
+    margin: 0.5%;
+    margin-top: 0.3%;
+}
