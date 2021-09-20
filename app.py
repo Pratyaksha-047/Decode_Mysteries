@@ -3,11 +3,7 @@ app= Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
-
-@app.route('/instructions.html')
-def instructions():
-    return render_template('instructions.html')
+    return("Hello world")
 
 if __name__ =="__main__":
     app.run(debug=True)
