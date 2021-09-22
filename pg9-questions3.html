@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decode Mysteries</title>
+    <link rel="stylesheet" href="/css/level3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <h1>ENTER CODE</h1>
+    <div class="userInput">
+        <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'sec')">
+        <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+        <input type="text" id="third"maxlength="1" onkeyup="clickEvent(this,'fourth')">
+        <input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+        <input type="text" id="fifth" maxlength="1">
+    </div>
+    <button onclick="btn1()">CONFIRM</button></a>
+
+    <script type="text/javascript">
+        function clickEvent(first, last){
+            if(first.value.length){
+                document.getElementById(last).focus();
+            }
+        }
+        function btn1(){
+            var v1 = document.getElementById('ist').value;
+            var v2 = document.getElementById('sec').value;
+            var v3 = document.getElementById('third').value;
+            var v4 = document.getElementById('fourth').value;
+            var v5 = document.getElementById('fifth').value;
+            if(v1 == "C" && v2 == "O" && v3=="B" && v4 =="O" && v5 =="L"){
+                alert("Correct! Now you will be redirected to the Kaggle Competition!");
+                window.open("https://www.kaggle.com/t/76d93f79bc5d454381dbee50c04e0dbe");
+            }
+            else{
+                alert("Wrong Answer! Try Again")
+            }
+        }
+    </script>
+
+</body>
+</html>
