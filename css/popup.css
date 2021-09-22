@@ -5,11 +5,11 @@
 }
 @font-face {
     font-family: AlbertsthalTyperwriter;
-    src: url(/fonts/AlbertsthalTypewriter.ttf);
+    src: url(fonts/AlbertsthalTypewriter.ttf);
   }
 
 body{
-    background: url(/img/bg3.jpeg);
+    background: url(img/bg3.jpeg);
     font-family: AlbertsthalTyperwriter;
 }
 
