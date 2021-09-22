@@ -81,11 +81,11 @@ body{
     right: 4%;
     top: 3%;
     bottom: 5%;
-    font-size: 15px;
+    font-size: 10px;
     position: fixed;
     width: 90%;
     text-align: justify;
-    /* overflow: scroll; */
+    overflow: scroll;
     max-height: 85%;
     background: rgb(223, 189, 194);
     color: black;
