@@ -5,11 +5,11 @@
 }
 @font-face {
     font-family: crackedCode;
-    src: url(/fonts/CrackedCode.ttf);
+    src: url(fonts/CrackedCode.ttf);
   }
 @font-face {
     font-family: AlbertsthalTyperwriter;
-    src: url(/fonts/AlbertsthalTypewriter.ttf);
+    src: url(fonts/AlbertsthalTypewriter.ttf);
   }
 body{
     max-height: 100vh;
