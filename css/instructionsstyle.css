@@ -5,11 +5,11 @@
 }
 @font-face {
     font-family: crackedCode;
-    src: url(fonts/CrackedCode.ttf);
+    src: url(/fonts/CrackedCode.ttf);
   }
 @font-face {
     font-family: AlbertsthalTyperwriter;
-    src: url(fonts/AlbertsthalTypewriter.ttf);
+    src: url(/fonts/AlbertsthalTypewriter.ttf);
   }
 body{
     max-height: 100vh;
@@ -57,71 +57,64 @@ body{
     text-align: center;
 }
 
-/* .instructions--main img{
+.instructions--main img{
     align-items: center;
     top: 5%;
     bottom: 5%;
-    width: 80%;
+    width: 86%;
     height: 90%;
     position: fixed;
-    margin-left: 10%;
-} */
+    margin-left: 7%;
+}
 
 .instructions--text{
-    /* position: fixed; */
+    position: fixed;
     margin: auto;
     align-self: center;
-    /* max-height: 50px; */
-    /* height: fit-content; */
-    background: rgb(0,0,0);
+    max-height: 50px;
+    height: fit-content;
 }
 
 .instructions--main p{
-    left: 5%;
-    right: 4%;
-    top: 3%;
-    bottom: 5%;
-    font-size: 15px;
+    left: 16%;
+    right: 30%;
+    top: 19%;
+    bottom: 24%;
+    font-size: 22px;
     position: fixed;
-    width: 90%;
+    width: 54%;
     text-align: justify;
-    overflow: auto;
-    max-height: 85%;
-    background: rgb(223, 189, 194);
-    color: black;
-    padding: 2%;
-
+    overflow: scroll;
+    max-height: 57%;
 }
 
 button {
     position: absolute;
     color: rgb(252, 224, 224);
-    background-color: rgb(0,0,0);
-    padding: 8px;
+    background-color: rgb(0,0,0,0.5);
+    padding: 10px;
     border: solid 1px rgba(226, 226, 226, 0.5);
-    border-radius: 10px;
-    font-size: 25px;
+    border-radius: 5px;
+    font-size: 30px;
     cursor: pointer;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
-    border-bottom: solid 1px #9ba4b6;
+    /*border-bottom: solid 1px #9ba4b6;*/
     transition: all ease .3s;
     text-align: center;
     position: absolute;
-    top: 93%;
-    left: 50%;
+    top: 76%;
+    left: 44%;
     transform: translate(-50%, -50%);
     font-family: AlbertsthalTyperwriter;
   }
   
   button:hover,
   button:active {
-    background-color: rgba(216, 213, 213, 0.8);
-    color: black;
-    border: 1px solid #222;
+    background-color: rgba(0,0,0, 0.4);
   }
   
   .link {
-    color: rgb(255, 224, 224);
+    color: rgb(252, 224, 224);
     text-decoration: none;
     /* border-bottom: solid 1px #fff3fc; */
   }
@@ -130,125 +123,3 @@ button {
     margin-bottom: 2em;
     color: #B0B4BB;
   } 
-  
-@media (min-width: 1024px){
-    body{
-        max-height: 100vh;
-        background-color: black;
-    }
-    .hero-img{
-        width: 100%;
-        height: 100%;
-        position: fixed;
-    }
-    .bg-overlay{
-        position: fixed;
-        inset: 0; 
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0, 0.4);
-        background-image: linear-gradient( to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100% );
-    }
-    
-    .instructions{
-        display: block;
-        width: 80%;
-        font-family: Arimo, sans-serif;
-        position: fixed;
-    }
-    .instructions h1{
-        text-align: center;
-        color: white;
-    }
-    
-    .instructions ol li {
-        color: white;
-        text-align: left;
-    }
-    
-    .instructions--main {
-        position: fixed;
-        color: rgb(252, 224, 224);
-        top: 2%;
-        font-family: AlbertsthalTyperwriter;
-        display: flex;
-    }
-    
-    .instructions--main{
-        text-align: center;
-    }
-    
-    /* .instructions--main img{
-        align-items: center;
-        top: 5%;
-        bottom: 5%;
-        width: 80%;
-        height: 90%;
-        position: fixed;
-        margin-left: 10%;
-    } */
-    
-    .instructions--text{
-        /* position: fixed; */
-        margin: auto;
-        align-self: center;
-        /* max-height: 50px; */
-        /* height: fit-content; */
-        background: rgb(0,0,0);
-    }
-    
-    .instructions--main p{
-        left: 25%;
-        right: 25%;
-        top: 10%;
-        bottom: 10%;
-        font-size: 18px;
-        position: fixed;
-        width: 50%;
-        text-align: justify;
-        /* overflow: scroll; */
-        /* max-height: 65%; */
-        background: pink;
-        color: black;
-        padding: 2%;
-    
-    }
-    
-    button {
-        position: absolute;
-        color: rgb(252, 224, 224);
-        background-color: rgb(0,0,0);
-        padding: 15px;
-        border: solid 1px rgba(226, 226, 226, 0.5);
-        border-radius: 10px;
-        font-size: 35px;
-        cursor: pointer;
-        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
-        border-bottom: solid 1px #9ba4b6;
-        transition: all ease .3s;
-        text-align: center;
-        position: absolute;
-        top: 84%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: AlbertsthalTyperwriter;
-      }
-      
-      button:hover,
-      button:active {
-        background-color: rgba(216, 213, 213, 0.8);
-        color: black;
-        border: 1px solid #222;
-      }
-      
-      .link {
-        color: rgb(252, 224, 224);
-        text-decoration: none;
-        /* border-bottom: solid 1px #fff3fc; */
-      }
-      
-      p {
-        margin-bottom: 2em;
-        color: #B0B4BB;
-      }
-}

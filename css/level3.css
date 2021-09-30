@@ -3,6 +3,8 @@ body{
     padding: 0;
     height: 100vh;
     background: url(img/bg3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .container{
     display: flex;

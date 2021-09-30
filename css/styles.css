@@ -16,6 +16,8 @@ body{
     text-align: center;
     max-height: 100vh;
     background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .hero-img{
     width: 100%;
