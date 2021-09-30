@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/level2.css">
     </head>
     <body>
+        <div id="loader" class="center"></div>
         <img id="Scarf" src="img/scarf.png">
         <img id="Calendar" src="img/calendar.png">
         <img id="JewelryCasket" src="img/casket.png">
@@ -126,6 +127,20 @@
                 window.location.href="pg8-questions2.html"
                 }
             }
+            document.onreadystatechange = function() {
+                    if (document.readyState !== "complete") {
+                        document.querySelector(
+                        "body").style.visibility = "hidden";
+                        document.querySelector(
+                        "#loader").style.visibility = "visible";
+                    } 
+                    else {
+                        document.querySelector(
+                        "#loader").style.display = "none";
+                        document.querySelector(
+                        "body").style.visibility = "visible";
+                    }
+                }
         </script>
     </body>
 </html>

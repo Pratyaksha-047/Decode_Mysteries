@@ -52,11 +52,11 @@ body {
 }
 #Remote {
     width: 80px;
-    height: 80px;
+    height: 70px;
     transform: translateY(300%);
     position: relative;
     display: block;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 #Barrel {
     width: 100px;
