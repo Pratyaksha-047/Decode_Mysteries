@@ -5,8 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Decode Mysteries</title>
         <link rel="stylesheet" type="text/css" href="css/level1.css">
+        <style>
+        #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+          
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+          
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
     </head>
     <body>
+        <div id="loader" class="center"></div>
         <img id="Barrel" src="img/obj2" onclick="document.getElementById('2').style.textDecorationLine='line-through'; document.getElementById('Barrel').style.visibility='hidden'">
         <img id="Knife" src="img/obj4" onclick="document.getElementById('4').style.textDecorationLine='line-through'; document.getElementById('Knife').style.visibility='hidden'">
         <img id="Hat" src="img/obj3.png" onclick="document.getElementById('3').style.textDecorationLine='line-through'; document.getElementById('Hat').style.visibility='hidden'">
@@ -67,6 +93,20 @@
                     if(user_score==5){
                     alert("Congratulations! You have found all the objects.");
                     window.location.href="pg5-questions.html"
+                    }
+                }
+                document.onreadystatechange = function() {
+                    if (document.readyState !== "complete") {
+                        document.querySelector(
+                        "body").style.visibility = "hidden";
+                        document.querySelector(
+                        "#loader").style.visibility = "visible";
+                    } 
+                    else {
+                        document.querySelector(
+                        "#loader").style.display = "none";
+                        document.querySelector(
+                        "body").style.visibility = "visible";
                     }
                 }
             </script> 
