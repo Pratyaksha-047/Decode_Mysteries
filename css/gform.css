@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: AlbertsthalTyperwriter;
+    src: url(fonts/AlbertsthalTypewriter.ttf);
+  }
+
+body{
+    background: url(img/bg3.jpeg);
+    font-family: AlbertsthalTyperwriter;
+}
+
+::selection{
+    color: #000;
+    background: rgb(247, 200, 200);
+}
+
+.google-form{
+    padding: 1% 0% 0% 30%;
+    display: block;
+    overflow: hidden;
+}
+.next_btn{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.next_btn{
+    font-family: AlbertsthalTyperwriter;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(247, 200, 200);
+    padding: 1% 2%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    border: solid 1px rgb(173, 173, 173);
+    cursor: pointer;
+}
+.next_btn button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
