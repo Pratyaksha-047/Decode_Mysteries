@@ -5,6 +5,8 @@ body{
     background: url(img/bg3.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 .container{
     display: flex;

@@ -11,6 +11,10 @@
 body{
     background: url(img/bg3.jpeg);
     font-family: AlbertsthalTyperwriter;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 ::selection{
