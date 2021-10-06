@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decode Mysteries</title>
     <link rel="stylesheet" href="css/popup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- FontAweome CDN Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<body>
+<body oncontextmenu="return false;">
     <main>
         <header>
             <nav>
@@ -41,7 +42,30 @@
 
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="js/script2.js"></script>
-
+      <script type="text/javascript">
+        /*$(document).ready(function() {
+	    $('body').bind('cut copy paste', function (e) {
+		    e.preventDefault();
+	    })
+	    $(".code").on("contextmenu", function(e) {
+		    return false;
+	    })
+    })*/
+        document.onkeydown = function (e) {
+          if (event.keyCode == 123) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+            return false;
+          }
+        };
+      </script>
 </body>
 </html>
 </html>

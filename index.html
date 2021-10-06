@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Decode Mysteries</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body oncontextmenu="return false;">
     <main>
         <header></header>
         <section class="hero">
@@ -40,5 +41,29 @@
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" 
     crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+          <script type="text/javascript">
+        /*$(document).ready(function() {
+	    $('body').bind('cut copy paste', function (e) {
+		    e.preventDefault();
+	    })
+	    $(".code").on("contextmenu", function(e) {
+		    return false;
+	    })
+    })*/
+        document.onkeydown = function (e) {
+          if (event.keyCode == 123) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+            return false;
+          }
+        };
+      </script>
 </body>
 </html>

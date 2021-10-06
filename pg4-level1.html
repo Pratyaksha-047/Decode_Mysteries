@@ -1,100 +1,146 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Decode Mysteries</title>
-        <link rel="stylesheet" type="text/css" href="css/level1.css">
-    </head>
-    <body>
-        <!--<div id="loader" class="center"></div>-->
-        <div id="loader" class="middle">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-            <div class="bar bar4"></div>
-            <div class="bar bar5"></div>
-            <div class="bar bar6"></div>
-            <div class="bar bar7"></div>
-            <div class="bar bar8"></div>
-        </div>
-        <img id="Barrel" src="img/obj2" onclick="document.getElementById('2').style.textDecorationLine='line-through'; document.getElementById('Barrel').style.visibility='hidden'">
-        <img id="Knife" src="img/obj4" onclick="document.getElementById('4').style.textDecorationLine='line-through'; document.getElementById('Knife').style.visibility='hidden'">
-        <img id="Hat" src="img/obj3.png" onclick="document.getElementById('3').style.textDecorationLine='line-through'; document.getElementById('Hat').style.visibility='hidden'">
-        <img id="Shoe" src="img/obj5" onclick="document.getElementById('5').style.textDecorationLine='line-through'; document.getElementById('Shoe').style.visibility='hidden'">
-        <img id="Remote" src="img/obj1" onclick="document.getElementById('1').style.textDecorationLine='line-through'; document.getElementById('Remote').style.visibility='hidden'">       <div id="grid">
-            <span id="5">Shoe</span>
-            <span id="3">Hat</span>
-            <span id="1">Remote</span>
-            <span id="2">Barrel</span>
-            <span id="4">Knife</span>
-            <audio controls autoplay loop hidden>
-                <source src="bgm/bgm.mp3" type="audio/mpeg">
-                Your browser does not support the audio tag.
-              </audio>
-            <script>
-                let user_score = 0;
-    
-                document.getElementById('Barrel').onclick = function() {
-                    user_score+=1
-                    document.getElementById('2').style.textDecorationLine='line-through'; 
-                    document.getElementById('Barrel').style.visibility='hidden';
-                    if(user_score==5){
-                    alert("Congratulations! You have found all the objects.");
-                    window.location.href="pg5-questions.html"
-                    }
-                }
-                document.getElementById('Knife').onclick = function() {
-                    user_score+=1
-                    document.getElementById('4').style.textDecorationLine='line-through'; 
-                    document.getElementById('Knife').style.visibility='hidden';
-                    if(user_score==5){
-                    alert("Congratulations! You have found all the objects.");
-                    window.location.href="pg5-questions.html"
-                    }
-                }
-                document.getElementById('Hat').onclick = function() {
-                    user_score+=1
-                    document.getElementById('3').style.textDecorationLine='line-through'; 
-                    document.getElementById('Hat').style.visibility='hidden';
-                    if(user_score==5){
-                    alert("Congratulations! You have found all the objects.");
-                    window.location.href="pg5-questions.html"
-                    }
-                }
-                document.getElementById('Shoe').onclick = function() {
-                    user_score+=1;
-                    document.getElementById('5').style.textDecorationLine='line-through'; 
-                    document.getElementById('Shoe').style.visibility='hidden';
-                    if(user_score==5){
-                    alert("Congratulations! You have found all the objects.");
-                    window.location.href="pg5-questions.html"
-                    }
-                }
-                document.getElementById('Remote').onclick = function() {
-                    user_score+=1;
-                    document.getElementById('1').style.textDecorationLine='line-through'; 
-                    document.getElementById('Remote').style.visibility='hidden';
-                    if(user_score==5){
-                    alert("Congratulations! You have found all the objects.");
-                    window.location.href="pg5-questions.html"
-                    }
-                }
-                document.onreadystatechange = function() {
-                    if (document.readyState !== "complete") {
-                        document.querySelector(
-                        "body").style.visibility = "hidden";
-                        document.querySelector(
-                        "#loader").style.visibility = "visible";
-                    } 
-                    else {
-                        document.querySelector(
-                        "#loader").style.display = "none";
-                        document.querySelector(
-                        "body").style.visibility = "visible";
-                    }
-                }
-            </script> 
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decode Mysteries</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/level1.css" />
+  </head>
+  <body oncontextmenu="return false;">
+    <!--<div id="loader" class="center"></div>-->
+    <div id="loader" class="middle">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <div class="bar bar7"></div>
+      <div class="bar bar8"></div>
+    </div>
+    <img
+      id="Barrel"
+      src="img/obj2"
+      onclick="document.getElementById('2').style.textDecorationLine='line-through'; document.getElementById('Barrel').style.visibility='hidden'"
+    />
+    <img
+      id="Knife"
+      src="img/obj4"
+      onclick="document.getElementById('4').style.textDecorationLine='line-through'; document.getElementById('Knife').style.visibility='hidden'"
+    />
+    <img
+      id="Hat"
+      src="img/obj3.png"
+      onclick="document.getElementById('3').style.textDecorationLine='line-through'; document.getElementById('Hat').style.visibility='hidden'"
+    />
+    <img
+      id="Shoe"
+      src="img/obj5"
+      onclick="document.getElementById('5').style.textDecorationLine='line-through'; document.getElementById('Shoe').style.visibility='hidden'"
+    />
+    <img
+      id="Remote"
+      src="img/obj1"
+      onclick="document.getElementById('1').style.textDecorationLine='line-through'; document.getElementById('Remote').style.visibility='hidden'"
+    />
+    <div id="grid">
+      <span id="5">Shoe</span>
+      <span id="3">Hat</span>
+      <span id="1">Remote</span>
+      <span id="2">Barrel</span>
+      <span id="4">Knife</span>
+      <audio controls autoplay loop hidden>
+        <source src="bgm/bgm.mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+      <script>
+        let user_score = 0;
+
+        document.getElementById("Barrel").onclick = function () {
+          user_score += 1;
+          document.getElementById("2").style.textDecorationLine =
+            "line-through";
+          document.getElementById("Barrel").style.visibility = "hidden";
+          if (user_score == 5) {
+            alert("Congratulations! You have found all the objects.");
+            window.location.href = "pg5-questions.html";
+          }
+        };
+        document.getElementById("Knife").onclick = function () {
+          user_score += 1;
+          document.getElementById("4").style.textDecorationLine =
+            "line-through";
+          document.getElementById("Knife").style.visibility = "hidden";
+          if (user_score == 5) {
+            alert("Congratulations! You have found all the objects.");
+            window.location.href = "pg5-questions.html";
+          }
+        };
+        document.getElementById("Hat").onclick = function () {
+          user_score += 1;
+          document.getElementById("3").style.textDecorationLine =
+            "line-through";
+          document.getElementById("Hat").style.visibility = "hidden";
+          if (user_score == 5) {
+            alert("Congratulations! You have found all the objects.");
+            window.location.href = "pg5-questions.html";
+          }
+        };
+        document.getElementById("Shoe").onclick = function () {
+          user_score += 1;
+          document.getElementById("5").style.textDecorationLine =
+            "line-through";
+          document.getElementById("Shoe").style.visibility = "hidden";
+          if (user_score == 5) {
+            alert("Congratulations! You have found all the objects.");
+            window.location.href = "pg5-questions.html";
+          }
+        };
+        document.getElementById("Remote").onclick = function () {
+          user_score += 1;
+          document.getElementById("1").style.textDecorationLine =
+            "line-through";
+          document.getElementById("Remote").style.visibility = "hidden";
+          if (user_score == 5) {
+            alert("Congratulations! You have found all the objects.");
+            window.location.href = "pg5-questions.html";
+          }
+        };
+        document.onreadystatechange = function () {
+          if (document.readyState !== "complete") {
+            document.querySelector("body").style.visibility = "hidden";
+            document.querySelector("#loader").style.visibility = "visible";
+          } else {
+            document.querySelector("#loader").style.display = "none";
+            document.querySelector("body").style.visibility = "visible";
+          }
+        };
+      </script>
+      <script type="text/javascript">
+        /*$(document).ready(function() {
+	    $('body').bind('cut copy paste', function (e) {
+		    e.preventDefault();
+	    })
+	    $(".code").on("contextmenu", function(e) {
+		    return false;
+	    })
+    })*/
+        document.onkeydown = function (e) {
+          if (event.keyCode == 123) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+            return false;
+          }
+        };
+      </script>
+    </div>
+  </body>
 </html>
