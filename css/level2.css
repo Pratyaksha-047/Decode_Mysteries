@@ -94,6 +94,12 @@ body {
     font-family: AlbertsthalTyperwriter;
     src: url(fonts/AlbertsthalTypewriter.ttf);
 }
+.unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 #Scarf {
     width: 100px;
     height: 100px;
