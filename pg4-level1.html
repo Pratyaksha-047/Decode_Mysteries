@@ -19,7 +19,7 @@
       <div class="bar bar7"></div>
       <div class="bar bar8"></div>
     </div>
-    <div  class="unselectable"><img
+    <div  class="unselectable" id="mouse"><img
       id="Barrel"
       src="img/obj2"
       onclick="document.getElementById('2').style.textDecorationLine='line-through'; document.getElementById('Barrel').style.visibility='hidden'"
@@ -57,6 +57,8 @@
       </audio>
       <script>
         let user_score = 0;
+
+        document.getElementById("mouse").style.cursor = "default";
 
         document.getElementById("Barrel").onclick = function () {
           user_score += 1;
