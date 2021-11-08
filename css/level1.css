@@ -146,10 +146,10 @@ body {
 
 #grid {
     height: fit-content;
-    width: 90%;
+    width: 80%;
     bottom: 5%;
-    left: 5%;
-    right: 5%;
+    left: 10%;
+    right: 10%;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -164,7 +164,7 @@ body {
 span {
     padding: 0.5%;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     font-family: AlbertsthalTyperwriter;
     margin-top: 1%;
     margin-bottom: 1%;
