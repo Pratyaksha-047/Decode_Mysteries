@@ -154,7 +154,7 @@ function showResult(){
 
     if (userScore == 5){//if user scored full
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span style="text-align:center">Congratulations Agent XI! You got '+ userScore +' out of '+ questions.length +'</span><br> <p style="text-align:center">We are impressed by your exceptional performance. As a reward, we would like to give you a hint for the next level.<br><br><span style="color: white">Hint:Appears here</span></p>';//Cousin of FORTRAN
+        let scoreTag = '<span style="text-align:center">Congratulations Agent XI! You got '+ userScore +' out of '+ questions.length +'</span><br> <p style="text-align:center">We are impressed by your exceptional performance. As a reward, we would like to give you a hint for the next level.<br><br><span style="color: white">Hint:Cousin of FORTRAN</span></p>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
     else if (userScore > 3){ // if user scored more than 3

@@ -2,57 +2,57 @@
 let questions = [
     {
     numb: 1,
-    question: "Which of these is not a type of supervised learning?",
-    answer: "Clustering",
+    question: "What is the maximum number of suicides in a country?",
+    answer: "2602",
     options: [
-      "Classification",
-      "Regression",
-      "Clustering",
-      "None of the above"
+      "2600",
+      "2650",
+      "2602",
+      "2700"
     ]
   },
     {
     numb: 2,
-    question: "What is the use of validation dataset in Machine Learning?",
-    answer: "To tune the hyperparameters of the Machine Learning Model",
+    question: "Which year has the most attacks?",
+    answer: "2014",
     options: [
-      "To train the Machine Learning model",
-      "To evaluate the performance of Machine Learning model",
-      "To tune the hyperparameters of the Machine Learning Model",
-      "None of the above"
+      "2011",
+      "2014",
+      "2013",
+      "2012"
     ]
   },
     {
     numb: 3,
-    question: "In a Bayesian network a node with only outgoing edges represents",
-    answer: "A variable conditionally independent of the other variables",
+    question: "What are the total no. of attacks in Iran?",
+    answer: "684",
     options: [
-      "A variable conditionally independent of the other variables",
-      "A variable dependent on its siblings",
-      "A variable whose dependency is uncertain",
-      "None of the above"
+      "684",
+      "665",
+      "673",
+      "695"
     ]
   },
     {
     numb: 4,
-    question: "Which of the following methods do we use to best fit the data in Logistic Regression?",
-    answer: "Maximum likelihood",
+    question: "What is the no. of attacks in Greece before Y2K?",
+    answer: "727",
     options: [
-      "Least square error",
-      "Maximum likelihood",
-      "Jaccard distance",
-      "Both A & B"
+      "730",
+      "695",
+      "710",
+      "727"
     ]
   },
     {
     numb: 5,
-    question: "The network that involves backward links from outputs to inputs and hidden layers is called as",
-    answer: "Recurrent Neural Networks",
+    question: "Name the country with maximum no. of attacks in a country",
+    answer: "Iraq",
     options: [
-      "Self-organising Maps",
-      "Perceptron",
-      "Multi-Layer Perceptron",
-      "Recurrent Neural Networks"
+      "United States",
+      "Iraq",
+      "Spain",
+      "Sri Lanka"
     ]
   },
   // you can uncomment the below codes and make duplicate as more as you want to add question
