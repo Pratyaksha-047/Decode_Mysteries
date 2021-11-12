@@ -218,3 +218,18 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.onkeydown = function (e) {
+    if (event.keyCode == 123) {
+         return false;
+        }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+         return false;
+        }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+        return false;
+        }
+    if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+        return false;
+        }
+    }
