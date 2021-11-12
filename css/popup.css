@@ -16,6 +16,12 @@ body{
     background-attachment: fixed;
     background-position: center;
 }
+.unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 
 ::selection{
     color: #000;
